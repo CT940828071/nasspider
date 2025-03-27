@@ -78,9 +78,9 @@ func (d DoMP4Provider) ParseURLs(URL string, currentEp int) ([]string, int, erro
 		return nil, 0, fmt.Errorf("异常：解析集数(%d) < 当前集数(%d)", updatedEp, currentEp)
 	}
 
-	if len(inputValues) != updatedEp {
-		return nil, 0, fmt.Errorf("异常：解析集数(%d) != 下载链接数(%d)", updatedEp, len(inputValues))
-	}
+	// if len(inputValues) != updatedEp {
+	//	return nil, 0, fmt.Errorf("异常：解析集数(%d) != 下载链接数(%d)", updatedEp, len(inputValues))
+	// }
 
 	// 解析集数等于当前记录集数
 	if updatedEp == currentEp {
